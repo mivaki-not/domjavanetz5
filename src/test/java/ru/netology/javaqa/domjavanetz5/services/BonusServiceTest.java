@@ -1,6 +1,6 @@
+package ru.netology.javaqa.domjavanetz5.services;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import ru.netology.javaqa.domjavanetz5.services.BonusService;
 
 public class BonusServiceTest {
 
@@ -25,10 +25,10 @@ void calculationPossibilityRestInNextMonth6() {
     BonusService service = new BonusService();
 
     // подготавливаем данные:
-    int expected = 6;
-    int income = 100_000;
-    int expenses = 60_000;
-    int threshold = 150_000;
+    int expected = 2;
+    int income = 10_000;
+    int expenses = 6_000;
+    int threshold = 15_000;
 
     int actual = service.calculate(income, expenses, threshold);
 
